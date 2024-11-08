@@ -10,6 +10,12 @@ public struct AtomicToggleStyle: ToggleStyle {
     var color: Color
     var onImage: String = "checkmark"
     var offImage: String = "xmark"
+    
+    public init(color: Color, onImage: String, offImage: String) {
+        self.color = color
+        self.onImage = onImage
+        self.offImage = offImage
+    }
 
     public func makeBody(configuration: Configuration) -> some View {
         ZStack {
