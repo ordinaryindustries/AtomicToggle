@@ -8,10 +8,10 @@ import SwiftUI
 
 public struct AtomicToggleStyle: ToggleStyle {
     var color: Color
-    var onImage: String = "checkmark"
-    var offImage: String = "xmark"
+    var onImage: String
+    var offImage: String
     
-    public init(color: Color, onImage: String, offImage: String) {
+    public init(color: Color, onImage: String = "checkmark", offImage: String = "xmark") {
         self.color = color
         self.onImage = onImage
         self.offImage = offImage
