@@ -6,12 +6,12 @@
 //
 import SwiftUI
 
-struct AtomicToggleStyle: ToggleStyle {
+public struct AtomicToggleStyle: ToggleStyle {
     var color: Color
     var onImage: String = "checkmark"
     var offImage: String = "xmark"
 
-    func makeBody(configuration: Configuration) -> some View {
+    public func makeBody(configuration: Configuration) -> some View {
         ZStack {
             Capsule()
                 .fill(configuration.isOn ? color : .gray)
